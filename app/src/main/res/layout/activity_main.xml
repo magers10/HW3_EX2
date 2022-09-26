@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#c89b6d">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="219dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="52dp"
+        android:background="#ac7d50"
+        android:text="@string/plum_is"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGold"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="buttonBlue,buttonGold,buttonPlum,tv_1"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <Button
+        android:id="@+id/buttonPlum"
+        android:layout_width="213dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="96dp"
+        android:background="#ac7d50"
+        android:text="PLUM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonGold"
+        android:layout_width="213dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="29dp"
+        android:background="#ac7d50"
+        android:text="GOLD"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlue"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="213dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="23dp"
+        android:background="#ac7d50"
+        android:text="BLUE"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlum"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="219dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="52dp"
+        android:background="#ac7d50"
+        android:text="@string/blue_is"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGold"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="219dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="52dp"
+        android:background="#ac7d50"
+        android:text="@string/gold_is"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGold"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
